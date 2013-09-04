@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hck.myplayer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="8" />
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.GET_TASKS" />
+    <application
+        android:name="com.hck.player.ui.MyApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/player2"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.hck.player.ui.LodingActivity"
+            android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="cn.waps.OffersWebView"
+           android:configChanges="keyboardHidden|orientation" />
+        <activity android:name="com.hck.player.ui.HomeActivity" android:screenOrientation="portrait"/>
+         <activity android:name="com.hck.player.ui.DownActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.hck.player.ui.HotActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.hck.player.ui.TuiJianActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.hck.player.ui.LocalActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.hck.player.ui.UserActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.hck.player.ui.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.hck.player.ui.ShowMovieInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.hck.player.ui.PlayActivity"  android:configChanges="orientation|keyboard|keyboardHidden|navigation"/> 
+        <activity  
+            android:name="io.vov.vitamio.activity.InitActivity"  
+            android:configChanges="orientation|keyboardHidden|navigation"  
+            android:launchMode="singleTop"  
+            android:theme="@android:style/Theme.NoTitleBar"  
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.hck.player.ui.ShowTypeActivity" android:screenOrientation="portrait"/>
+        <meta-data android:name="WAPS_ID" android:value="a0e1618646675a6852d3ab8d4dc70170"/>
+        <meta-data android:name="WAPS_PID" android:value="QQ"/>
+    </application>
+
+</manifest>

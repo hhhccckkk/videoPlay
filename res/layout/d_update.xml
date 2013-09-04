@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#00000000"
+    android:gravity="center"
+    >
+
+    <LinearLayout
+         android:background="@drawable/jok_bg_shap"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical" >
+    
+        <TextView
+             android:textColor="#000000"
+            android:padding="3dp"
+            android:textSize="16sp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="请先激活" />
+        <TextView 
+            android:layout_width="200dp"
+            android:layout_height="1dp" 
+            />
+       <TextView 
+           android:textColor="#000000"
+           android:textSize="14sp"
+           android:padding="3dp"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/update_content_id"
+           />
+       <LinearLayout 
+           android:layout_height="45dp"
+           android:layout_width="fill_parent"
+           android:orientation="horizontal"
+           android:layout_marginTop="10dp"
+           >
+           <Button 
+               android:id="@+id/update_exit"
+               android:layout_marginLeft="3dp"
+                android:textColor="#ffffff"
+               android:layout_width="wrap_content"
+               android:layout_height="35dp"
+               android:text="退出"
+               android:background="@drawable/bt_selector"
+               android:layout_weight="1"
+               />
+           <Button 
+                android:id="@+id/update_resh"
+               android:layout_marginRight="3dp"
+               android:textColor="#ffffff"
+               android:layout_marginLeft="10dp"
+               android:layout_weight="1"
+               android:layout_width="wrap_content"
+               android:layout_height="35dp"
+               android:text="激活"
+               android:background="@drawable/bt_selector"
+               />
+       </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
